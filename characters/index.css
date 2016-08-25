@@ -107,22 +107,23 @@ input[type="text"] {
     height: 73px;
 }
 
-/*
-.S { background: mediumblue; color: black; }
-.A { background: orange; }
-.B { background: red; }
-.C { background: limegreen; }
-.D { background: deepskyblue; }
-.E { background: dimgray; }
-*/
+.HRT   { background: salmon; }
+.BOD   { background: lightskyblue; }
+.SKL   { background: lightgreen; }
+.BRV   { background: gold; }
+.WIS   { background: orchid; }
+.RCV   { background: sandybrown; }
+.TND   { background: peru; }
+.BLOCK { background: darkslateblue; }
+.BOMB  { background: maroon; }
+.G     { background: orange; }
+.EMPTY { background: #777; }
 
-.cell-SSS { font-weight: bold; color: mediumblue; font-size: large }
-.cell-S { font-weight: bold; color: mediumblue; font-size: large }
-.cell-A { font-weight: bold; color: orange; font-size: large }
-.cell-B { font-weight: bold; color: red; font-size: large;  }
-.cell-C { font-weight: bold; color: limegreen; font-size: large }
-.cell-D { font-weight: bold; color: deepskyblue; font-size: large }
-.cell-E { font-weight: bold; color: dimgray; font-size: large }
+.cell-HRT { font-weight: bold; color: red; }
+.cell-BOD { font-weight: bold; color: blue; }
+.cell-SKL { font-weight: bold; color: green; }
+.cell-BRV { font-weight: bold; color: goldenrod; }
+.cell-WIS { font-weight: bold; color: darkorchid; }
 
 .badge-japan, .badge-global {
     float: left;
