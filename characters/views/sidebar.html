@@ -7,8 +7,8 @@
 <div id="clear-button" class="filter-header" ng-click="clearFilters()">Clear filters</div>
 
 <div class="filter-container">
-    <span class="filter-header">Pokemon Type filters</span>
-    <span ng-repeat="(n,class) in [ ' Fire', ' Grass', ' Water', ' Normal', ' Fighting', ' Flying', ' Poison', ' Ground', ' Rock', ' Bug', ' Ghost', ' Steel', ' Electric', ' Psychic', ' Ice', ' Dragon', ' Dark', ' Fairy' ]"
+    <span class="filter-header">Character Attribute filters</span>
+    <span ng-repeat="(n,class) in [ 'HRT', 'BOD', 'SKL', 'BRV', 'WIS' ]"
         class="filter width-6 class" ng-click="onClassClick($event,class)"
         ng-class="{ active: filters.classes.indexOf(class) > -1 }">{{class}}</span>
 </div>
