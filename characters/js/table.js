@@ -29,16 +29,16 @@ for (var i=0;i<log.length;++i) characterLog[log[i]] = true;
 
 var getTableColumns = function() {
     var result = [
-        { title: 'Poke #' },
+        { title: '#' },
         { title: 'Name', render: addImage },
-        { title: 'Tier' },
-        { title: 'Type' },
-		{ title: 'Max CP' },
-        { title: 'Max HP' },
+        { title: 'Stars' },
+        { title: 'Attribute' },
+		{ title: 'Max HP' },
         { title: 'Max Attack' },
-        { title: 'Max Defense' },
-        { title: 'Attack DPS' },
-        { title: 'Special DPS' },
+        { title: 'Attack Range' },
+        { title: 'Cost' },
+        { title: 'Ability Slots' },
+        { title: '' },
         { title: '' },
         { title: '', orderable: false }
     ];
