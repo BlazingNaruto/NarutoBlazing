@@ -15,7 +15,7 @@
 
                     <div ng-if="!unit.incomplete" class="slot huge" decorate-slot big="true" uid="unit.number + 1"></div>
 
-                    <div ng-if="unit.incomplete" class="alert alert-danger">This Pokemon's data is still partially missing and will be added soon!</div>
+                    <div ng-if="unit.incomplete" class="alert alert-danger">This Character's data is still partially missing and will be added soon!</div>
 
                     <h3 class="page-header">
                         Details
@@ -23,7 +23,7 @@
                         <input compare type="text" id="compare" class="pull-right" placeholder="Compare with..."></input>
                         <label class="pull-right">
                             <input type="checkbox" ng-model="characterLog[id]" ng-change="checkLog()"></input>
-                            Check to add to your Pokemon Collection
+                            Check to add to your Collection
                         </label>
                     </h3>
 
@@ -65,18 +65,16 @@
                         </table>
                     </div>
 
-                    <h3 class="page-header">Stats at Player Level 40*</h3>
+                    <h3 class="page-header">Stats</h3>
 
                     <div class="panel panel-default">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>IV's</th>
-                                    <th>CP</th>
+                                    <th>Level</th>
                                     <th>HP</th>
-									<th>Atk</th>
-									<th>Def</th>
-
+                                    <th>ATK</th>
+									<th>Luck</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -88,8 +86,6 @@
                                     <td ng-if="compare" comparison="positive">{{unit.maxEXP - compare.maxEXP | number}}</td>
 									<td ng-if="!compare">{{unit.minHP | number}}</td>
                                     <td ng-if="compare" comparison="positive">{{unit.minHP - compare.minHP | number}}</td>
-									<td ng-if="!compare">{{unit.minStrength | number}}</td>
-                                    <td ng-if="compare" comparison="positive">{{unit.minStrength - compare.minStrength | number}}</td>
                                 </tr>
                                 <tr>
                                     <td>Min</td>
@@ -99,15 +95,12 @@
                                     <td ng-if="compare" comparison="positive">{{unit.minRCV - compare.minRCV | number}}</td>
                                     <td ng-if="!compare">{{unit.minAtk | number}}</td>
                                     <td ng-if="compare" comparison="positive">{{unit.minAtk - compare.minAtk | number}}</td>
-                                    <td ng-if="!compare">{{unit.maxHP | number}}</td>
-                                    <td ng-if="compare" comparison="positive">{{unit.maxHP - compare.maxHP | number}}</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-					<div>* Stat calculation for this game is a bit complicated, so these stats show only stats for perfect IV's (Max) and zero IV's (Min).
-					We'll eventually come up with a more elegant solution, but, for now, refer to our 
-					<a href="http://www.TeamPidgey.com/" target="_blank">Stat Explanation page</a> for further details.</div>
+					<div>* We haven't quite figured out the way stats are calculated in this game yet. Once we do, we will implement a more 
+					elegant solution for stats.</div>
 
                     <!-- Attacks (non-comparison) -->
 
