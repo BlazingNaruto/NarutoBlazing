@@ -31,9 +31,9 @@
                         <table class="table table-striped">
                             <tbody>
                                 <tr>
-                                    <th>Type 1</th>
-                                    <th>Type 2</th>
-                                    <th>Tier</th>
+                                    <th>Element</th>
+                                    <th>Stars</th>
+                                    <th>Cost</th>
                                 </tr>
                                 <tr>
 <!--									<td ngif="angular.isArray(unit.class)">{{unit.class}}</td> -->
@@ -43,7 +43,7 @@
 									<td ng-if="sizeOf(unit.class[0]) < 2"></td>
                                     <td>{{unit.type}}</td>
                                 </tr>
- <!-- Not needed                <tr>
+								<tr>
                                     <th>Favorite Food YW1</th>
                                     <th>Favorite Food YW2</th>
 									<th colspan="{{hybrid ? 2 : 1}}">Loafing Phrase</th>
@@ -88,7 +88,7 @@
                                     <td ng-if="compare" comparison="positive">{{unit.minHP - compare.minHP | number}}</td>
                                 </tr>
                                 <tr>
-                                    <td>Min</td>
+                                    <td>1</td>
                                     <td ng-if="!compare">{{unit.maxLevel | number}}</td>
                                     <td ng-if="compare" comparison="positive">{{unit.maxLevel - compare.maxLevel | number}}</td>
                                     <td ng-if="!compare">{{unit.minRCV | number}}</td>
