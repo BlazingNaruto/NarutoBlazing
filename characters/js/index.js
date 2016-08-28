@@ -13,7 +13,7 @@ app
         $rootScope.$on('$stateChangeSuccess',function(e) {
             $rootScope.currentState = $state.current.name;
             if (ga) ga('send', 'pageview', '/characters');
-            var title = 'Team Pidgey Pokemon GO Database';
+            var title = 'Naruto Blazing Character Database';
             if ($state.current.name == 'main.view')
                 title = (window.units[parseInt($stateParams.id,10) - 1].name || '?') + ' | ' + title;
             window.document.title = title;

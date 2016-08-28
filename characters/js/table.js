@@ -38,7 +38,7 @@ var getTableColumns = function() {
         { title: 'Attack Range' },
         { title: 'Cost' },
         { title: 'Ability Slots' },
-        { title: '' },
+        { title: 'Tier Rank' },
         { title: '' },
         { title: '', orderable: false }
     ];

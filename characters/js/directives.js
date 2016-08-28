@@ -324,12 +324,12 @@ directives.addLinks = function($stateParams) {
             var id = parseInt($stateParams.id,10), data = details[id], incomplete = units[id - 1].incomplete;
             var ul = $('<ul></ul>');
             if (!isNaN(gw[id-1])) {
-                ul.append($('<li><a href="http://www.TeamPidgey.com" target="_blank">' +
-                        'Back to TeamPidgey.com</a></li>'));
+                ul.append($('<li><a href="http://www.BlazingNaruto.com" target="_blank">' +
+                        'Back to BlazingNaruto.com</a></li>'));
             }
             if (!incomplete) {
-                ul.append($('<li><a href="http://www.pokemon.com/us/pokemon-video-games/pokemon-go/" target="_blank">' +
-                        'Official Pokemon GO Website</a></li>'));
+                ul.append($('<li><a href="http://naruto-blazing.net/en/" target="_blank">' +
+                        'Official Naruto Blazing Website</a></li>'));
             }
             if (ul.children().length > 0)
                 element.append(ul);
